@@ -1,3 +1,7 @@
+// Friendly login & sign up form
+//
+// based on http://blog.leahculver.com/2009/11/log-in-or-sign-up.html
+//
 // @author Rolando Espinoza La fuente
 // @web http://rolandoespinoza.info
 // @license MIT
@@ -25,15 +29,18 @@ jQuery(function($) {
         //  - change form action
         //  - change password label
         //  - change button label
+        //  - show/hide password confirmation
         //  - show/hide forgot & terms
         if (action == 'signup') {
             $form.get(0).setAttribute('action', 'signup');
+            $('p.password2', $form).show();
             $('label[for="password"]', $form).html('Choose a password');
             $('input[type="submit"]', $form).attr('value', 'Sign up!');
             $('p.forgot_password', $form).hide();
             $('p.terms', $form).show();
         } else if (action == 'login') {
             $form.get(0).setAttribute('action', 'login');
+            $('p.password2', $form).hide();
             $('label[for="password"]', $form).html('Password');
             $('input[type="submit"]', $form).attr('value', 'Log in');
             $('p.forgot_password', $form).show();
