@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Login or signup test</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="author" content="Rolando Espinoza La fuente" />
+<meta name="license" content="MIT" />
+<style type="text/css">
+#login_signup {
+    width: 280px;
+}
+
+#login_signup label {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
+</style>
+<script type="text/javascript" src="http://jqueryjs.googlecode.com/files/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="base.js"></script>
+</head>
+<body>
+<!-- start login or signup bit -->
+<div id="login_signup" class="hidden">
+    <!-- default login form -->
+    <h2>Log in or join now!</h2>
+    <form name="login_signup" action="login" method="post">
+        <p class="email"><label for="email">Email address</label>
+            <input type="text" name="email" id="email" />
+        </p>
+        <p class="action">
+            <label><input type="radio" name="action" value="login" checked="checked" />
+                I have an account</label>
+            <label><input type="radio" name="action" value="signup" />
+                I'm new!</label>
+        </p>
+        <p class="password"><label for="password">Password</label>
+            <input type="text" name="password" id="password" />
+        </p>
+        <p class="submit"><input type="submit" value="Log in" /></p>
+        <p class="terms hidden">
+            By clicking 'Sign up!' above, you confirm that you
+            accept the <a href="#">terms of service</a>.
+        </p>
+        <p class="forgot_password"><a href="#">Forgot your password?</a></p>
+        <p class="forgot_hint hidden">
+            Click 'Recover password' and you will receive an email
+            with instructions.<br />
+            <a class="back_link" href="#">« back to login</a>
+        </p>
+    </form>
+</div>
+<!-- end -->
+</body>
+</html>
