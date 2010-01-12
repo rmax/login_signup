@@ -20,11 +20,16 @@
 </style>
 <script type="text/javascript" src="http://jqueryjs.googlecode.com/files/jquery-1.3.2.min.js"></script>
 <script type="text/javascript" src="base.js"></script>
+<script type="text/javascript">
+//<!--
+document.write('<style type="text/css">.js-hidden{display:none;}</style>');
+//-->
+</script>
 </head>
 <body>
 <noscript>Javascript is disabled. You need javascript in order to use this full featured login form.</noscript>
 <!-- start login or signup bit -->
-<div id="login_signup" class="hidden">
+<div id="login_signup" class="js-hidden">
     <!-- default login form -->
     <p><a href="http://github.com/darkrho/login_signup">source</a>
         | inspired in <a href="http://blog.leahculver.com/2009/11/log-in-or-sign-up.html">Leah's post</a>
